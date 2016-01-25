@@ -1,8 +1,15 @@
 body{
-
+	font: 400 14px/1.87 'Aleo', 'Arial', sans-serif;s
+	letter-spacing: 0.05em;
+	color:#3b3b3b;
 }
 
 /* Typography */
+
+a {
+	text-decoration: none;
+}
+
 a,
 input[type="submit"],
 input[type="button"],
@@ -51,7 +58,394 @@ textarea {
 }
 
 /* Layout */
+.ba-dishes__presentation > [class*="ba-width-"],
+.ba-information > [class*="ba-width-"] {
+	float: left;
+	padding-left: 60px;
+}
+
+.ba-dishes__presentation,
+.ba-information {
+	margin-left: -60px;
+}
+
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
+	max-width: 1140px;
+}
+
+
+/*ba-header*/
+.ba-header {
+	padding: 40px 0 32px 0;
+}
+
+.ba-menu {
+	list-style: none;
+	margin: 0;
+	padding:0;
+	font-size: 16px;
+}
+
+.ba-menu li{
+	float: left;
+	margin-left:47px;
+}
+
+.ba-menu li:first-child {
+	margin-left: 0;
+}
+
+.ba-menu li a {
+	color:  #3b3b3b;
+	font-weight:700;
+}
+
+.ba-menu li a:hover {
+	color: #f34949;
+}
+
+/*ba-restaurant-hp*/
+
+.ba-restaurant-hp {
+	text-align: center;
+	background: #2b2b2b url(../img/ba-restaurant-hp.jpg) 50%;
+	background-size: cover;
+	color:#fff;
+	border-bottom:4px solid #f34949;
+	position: relative;
+}
+
+.ba-restaurant-hp h1{
+	font-family: "wc_mano_negra_btaregular";
+	font-size: 100px;
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+	letter-spacing: -0.09em;
+	font-weight:300;
+	margin-bottom: 12px;
+}
+
+.ba-restaurant-hp p {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+.ba-restaurant-hp--dark{
+	padding: 225px 0 206px 0;
+	background-color:  rgba(43, 43, 43, 0.84);
+
+}
+
+.ba-restaurant-hp p:after {
+	content: "";
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+	display: block;
+	position: absolute;
+	top: 62%;
+	left: 32%;
+}
+
+.ba-restaurant-hp p:before {
+	content: "";
+	width: 40px;
+	height: 1px;
+	background-color: #fff;
+	display: block;
+	position: absolute;
+	top: 62%;
+	right: 32%;
+}
+
+
+
+/*ba-menu*/
+
+
+
+.ba-restomenu {
+	padding-bottom: 170px;
+	position: relative;
+}
+
+.ba-restomenu__title {
+	position: absolute;
+	top: -4px;
+	left: calc(50% - 77.5px);
+	background-color:  #f34949;
+	width: 155px;
+	height: 75px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 56px;
+}
+
+.ba-restomenu__title:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border: 77.5px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+.ba-restomenu__title h2 {
+	margin: 0;
+	padding-top: 11px;
+}
+
+.ba-restomenu__name {
+	margin: 0;
+	font-size: 16px;
+	text-align: left;
+	margin-right: 50px;
+	letter-spacing: 1px;
+}
+
+.ba-restomenu__ingredients {
+	margin: 0;
+	color:  #b7b7b7;
+	font-size: 12px;
+	font-weight: 300;
+	font-style: italic;
+	text-align: left;
+	letter-spacing: 0.6px;
+}
+
+.ba-restomenu__price {
+	color:  #555555;
+	font-size: 16px;
+}
+
+.ba-restomenu__list {
+	padding-top: 10px;
+	margin-bottom: 38px;
+}
+
+.ba-list-left {
+	padding-right: 50px;
+}
+
+.ba-list__right {
+	padding-left: 50px;
+}
+
+.ba-restomenu__dish {
+	margin-bottom: 50px;
+}
+
+.ba-restomenu__card {
+	position: relative;
+}
+
+.ba-restomenu__name:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 220px;
+	background-color: #e3e1e1;
+	top: 30%;
+	left: 100%;
+}
+
+.ba-restomenu__button {
+	border: 1px solid #d7d5d5;
+	height: 34px;
+	line-height: 34px;
+	color: #b7b7b7;
+	padding: 10px 15px;
+	letter-spacing: 1.5px;
+	margin-top: 88px;
+	margin-left: 485px;
+
+}
+
+
+
+.ba-restomenu__button:hover {
+	background: #f34949;
+	color: #FFF;
+	border-style: none;
+
+}
+
+/*ba-dishes*/
+.ba-dishes {
+	position: relative;
+}
+
+.ba-dishes__title {
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+}
+
+.ba-dishes__title:after{
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 220px;
+	background-color: #e3e1e1;
+	top: 5%;
+	left: 25%;
+}
+
+.ba-slider__circle {
+
+	float: right;
+	display: block;
+	border-radius: 50%;
+	background-color: #dedede;
+	width: 9px;
+	height: 9px;
+	margin-left: 10px;
+
+}
+
+.ba-dishes__slider {
+	position: absolute;
+	top: 3%;
+	right: 9%;
+}
+.ba-slider__circle--active {
+	background-color:  #9b9b9b;
+}
+
+.ba-slider__circle:hover {
+	background-color:  #9b9b9b;
+}
+
+.ba-dishes__presentation {
+	margin-top: 70px;
+}
+
+
+.ba-dishes__name {
+	color:  #555555;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 60px;
+	margin: 0;
+	padding-left: 2px;
+	letter-spacing: 0.8px;
+}
+
+.ba-dishes__description {
+	position: relative;
+}
+
+.ba-dishes__name:hover {
+	color:  #f34949;
+}
+
+
+.ba-dishes__price {
+	position: absolute;
+	top:0;
+	left: 90%;
+	color:  #555555;
+	font-size: 16px;
+	font-weight: 300;
+
+}
+
+.ba-dishes__rating {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	top: -20px;
+}
+
+.ba-dishes__rating li {
+	display: inline-block;
+	margin-right: 2px;
+
+}
+
+.ba-rating__star--active:before {
+	content: "\2605";
+	position: absolute;
+	color: #f2e126;
+
+}
+
+.ba-rating__star--nonactive:before {
+	content: "\2605";
+	position: absolute;
+	color: #dedede;
+}
+
+
+/*ba-gallery*/
+
+.ba-gallery {
+	padding: 150px 0 200px;
+	position: relative;
+}
+
+.ba-gallery img {
+	display: block;
+}
+
+.ba-gallery__title {
+	text-transform: uppercase;
+	color:  #3b3b3b;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 60px;
+	letter-spacing: 1px;
+	margin-bottom: 58px;
+}
+
+
+.ba-gallery__title:after{
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 220px;
+	background-color: #e3e1e1;
+	top: 20%;
+	left: 23%;
+}
+
+/*ba-footer*/
+.ba-footer {
+	background-color:  #3b3b3b;
+	padding: 94px 0;
+	color:  #ffffff;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+.ba-footer h3 {
+	margin: 0;
+}
+
+.ba-footer a{
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.ba-footer address {
+	font-size: 16px;
+}
+
+.ba-information__tel {
+	font-weight: 700;
+}
+
+.ba-footer {
+	margin: 0;
+}
+
+
+
+.ba-footer a:hover {
+	color:  #f34949;
 }
